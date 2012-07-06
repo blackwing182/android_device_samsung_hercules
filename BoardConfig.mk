@@ -36,8 +36,8 @@ TARGET_BOOTLOADER_BOARD_NAME := hercules
 TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
+#TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
+#TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true
 BOARD_KERNEL_BASE           := 0x40400000
 BOARD_KERNEL_PAGESIZE       := 2048
@@ -90,3 +90,7 @@ TARGET_NO_INITLOGO := true
 # Preload the boot animation to avoid jerkiness
 TARGET_BOOTANIMATION_PRELOAD := true
 
+# Recovery
+TARGET_PREBUILT_KERNEL := device/samsung/hercules/kernel-recovery
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/hercules/kernel-recovery
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/hercules/recovery_keys.c

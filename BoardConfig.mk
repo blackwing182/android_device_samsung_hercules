@@ -93,4 +93,4 @@ TARGET_BOOTANIMATION_PRELOAD := true
 # Recovery
 TARGET_PREBUILT_KERNEL := device/samsung/hercules/kernel-recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/hercules/kernel-recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/hercules/recovery_keys.c
+#BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/hercules/recovery_keys.c
